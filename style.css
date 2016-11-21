@@ -1,0 +1,17 @@
+#canv {
+    width: 400px;
+    height: 400px;
+    background: #000;
+    border: 2px solid grey;
+    padding: 20px;
+    margin: 50px auto;
+}
+.cell {
+    width: 77px;
+    height: 77px;
+    float: left;
+    border: 1px solid #cc0000;
+}
+.cell:nth-child(5n+1){
+    clear: both;
+}
