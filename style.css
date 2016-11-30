@@ -11,6 +11,48 @@
     height: 77px;
     float: left;
     border: 1px solid #cc0000;
+    position: relative;
+}
+.cell:after {
+    content: "";
+    width: 50px;
+    height: 50px;
+    background: #000;
+    border-radius: 30px;
+    background: #000;
+    position: absolute;
+    top: 14px;
+    left: 14px
+}
+.cell[data-color='A']:after {
+    background: #cc0000;
+}
+.cell.fin[data-color='A'] {
+    background: #FFAC00;
+}
+.cell[data-color='B']:after {
+    background: rgb(0, 0, 255);
+}
+.cell.fin[data-color='B'] {
+    background: #FFAC00;
+}
+.cell[data-color='C']:after {
+    background: rgb(0, 255, 0);
+}
+.cell.fin[data-color='C'] {
+    background: #FFAC00;
+}
+.cell[data-color='D']:after {
+    background: rgb(255, 255, 0);
+}
+.cell.fin[data-color='D'] {
+    background: #FFAC00;
+}
+.cell[data-color='E']:after {
+    background: rgb(244, 247, 247);
+}
+.cell.fin[data-color='E'] {
+    background: #FFAC00;
 }
 .cell:nth-child(5n+1){
     clear: both;

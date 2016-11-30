@@ -9,6 +9,17 @@
 
 <div id="canv"></div>
 
-<script src="main.js"></script>
+<script src="Game.js"></script>
+<script>
+    var game = null;
+    window.onload = function () {
+        var matrix = document.getElementById("canv");
+
+        game = new Game(matrix);
+        console.dir(game);
+
+    };
+
+</script>
 </body>
 </html>
